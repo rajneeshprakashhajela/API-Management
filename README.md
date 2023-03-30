@@ -41,6 +41,16 @@ Ocp-Apim-Subscription-Key: dd0bd20*********8***fc7da0
  
 Put the above details into postman app and send the request.
  
+![alt text](https://learn.microsoft.com/en-us/azure/api-management/media/set-edit-policies/form-editor.png)
 
 
+Protect API
 
+<validate-jwt header-name="Authorization" failed-validation-httpcode="401" failed-validation-error-message="Unauthorized. Access token is missing or invalid.">
+    <openid-config url="https://login.microsoftonline.com/{aad-tenant}/v2.0/.well-known/openid-configuration" />
+    <required-claims>
+        <claim name="aud">
+            <value>{backend-app-client-id}</value>
+        </claim>
+    </required-claims>
+</validate-jwt>
