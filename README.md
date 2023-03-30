@@ -37,8 +37,8 @@ Audience is the backend
         o	Package APIs into products.<br>
         o	Set up policies like quotas or transformations on the APIs.<br>
         o	Get insights from analytics.<br>
-o<b>	Manage users.</b><br>
-        •	The Developer portal serves as the main web presence for developers, where they can:<br>
+        o	Manage users.<br>
+•	<b>The Developer portal serves as the main web presence for developers, where they can:</b><br>
         o	Read API documentation.<br>
         o	Try out an API via the interactive console.<br>
         o	Create an account and subscribe to get API keys.<br>
