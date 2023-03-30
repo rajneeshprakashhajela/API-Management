@@ -40,8 +40,7 @@ Content-Type: text/xml;charset=utf-8
 Ocp-Apim-Subscription-Key: dd0bd20*********8***fc7da0
  
 Put the above details into postman app and send the request.
- 
-![alt text](https://learn.microsoft.com/en-us/azure/api-management/media/set-edit-policies/form-editor.png)
+
 
 
 Protect API
@@ -55,3 +54,6 @@ Protect API
         </claim>
     </required-claims>
 </validate-jwt>
+
+![alt text](https://learn.microsoft.com/en-us/azure/api-management/media/set-edit-policies/form-editor.png)
+
