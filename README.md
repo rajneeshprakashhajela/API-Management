@@ -25,19 +25,19 @@ Protect API
 </validate-jwt>
 Audience is the backend
  
-•	 API gateway is the endpoint that:<br>
+•	 <b>API gateway is the endpoint that:</b><br>
         o	Accepts API calls and routes them to your backends.<br>
         o	Verifies API keys, JWT tokens, certificates, and other credentials.<br>
         o	Enforces usage quotas and rate limits.<br>
         o	Transforms your API on the fly without code modifications.<br>
         o	Caches backend responses were set up.<br>
         o	Logs call metadata for analytics purposes.<br>
-•	The Azure portal is the administrative interface where you set up your API program. Use it to:<br>
+•	<b>The Azure portal is the administrative interface where you set up your API program. Use it to:</b><br>
         o	Define or import API schema.<br>
         o	Package APIs into products.<br>
         o	Set up policies like quotas or transformations on the APIs.<br>
         o	Get insights from analytics.<br>
-o	Manage users.<br>
+o<b>	Manage users.</b><br>
         •	The Developer portal serves as the main web presence for developers, where they can:<br>
         o	Read API documentation.<br>
         o	Try out an API via the interactive console.<br>
