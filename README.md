@@ -26,24 +26,24 @@ Protect API
 Audience is the backend
  
 •	 API gateway is the endpoint that:<br>
-o	Accepts API calls and routes them to your backends.`<br>`
-o	Verifies API keys, JWT tokens, certificates, and other credentials.`<br>`
-o	Enforces usage quotas and rate limits.
-o	Transforms your API on the fly without code modifications.
-o	Caches backend responses were set up.
-o	Logs call metadata for analytics purposes.
-•	The Azure portal is the administrative interface where you set up your API program. Use it to:
-o	Define or import API schema.
-o	Package APIs into products.
-o	Set up policies like quotas or transformations on the APIs.
-o	Get insights from analytics.
-o	Manage users.
-•	The Developer portal serves as the main web presence for developers, where they can:
-o	Read API documentation.
-o	Try out an API via the interactive console.
-o	Create an account and subscribe to get API keys.
-o	Access analytics on their own usage.
- 
+        o	Accepts API calls and routes them to your backends.<br>
+        o	Verifies API keys, JWT tokens, certificates, and other credentials.<br>
+        o	Enforces usage quotas and rate limits.<br>
+        o	Transforms your API on the fly without code modifications.<br>
+        o	Caches backend responses were set up.<br>
+        o	Logs call metadata for analytics purposes.<br>
+•	The Azure portal is the administrative interface where you set up your API program. Use it to:<br>
+        o	Define or import API schema.<br>
+        o	Package APIs into products.<br>
+        o	Set up policies like quotas or transformations on the APIs.<br>
+        o	Get insights from analytics.<br>
+o	Manage users.<br>
+        •	The Developer portal serves as the main web presence for developers, where they can:<br>
+        o	Read API documentation.<br>
+        o	Try out an API via the interactive console.<br>
+        o	Create an account and subscribe to get API keys.<br>
+        o	Access analytics on their own usage.<br>
+
 
 
 Headers
