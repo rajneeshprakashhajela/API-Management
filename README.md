@@ -12,6 +12,17 @@ Azure API Management is made up of an API gateway, a management plane, and a dev
 
 
 
+
+
+Protect API
+<validate-jwt header-name="Authorization" failed-validation-httpcode="401" failed-validation-error-message="Unauthorized. Access token is missing or invalid.">
+    <openid-config url="https://login.microsoftonline.com/{aad-tenant}/v2.0/.well-known/openid-configuration" />
+    <required-claims>
+        <claim name="aud">
+            <value>{backend-app-client-id}</value>
+        </claim>
+    </required-claims>
+</validate-jwt>
 Audience is the backend
  
 •	 API gateway is the endpoint that:
