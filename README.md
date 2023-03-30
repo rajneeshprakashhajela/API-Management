@@ -25,7 +25,7 @@ Protect API
 </validate-jwt>
 Audience is the backend
  
-•	 API gateway is the endpoint that:`<br>`
+•	 API gateway is the endpoint that:<br>
 o	Accepts API calls and routes them to your backends.`<br>`
 o	Verifies API keys, JWT tokens, certificates, and other credentials.`<br>`
 o	Enforces usage quotas and rate limits.
