@@ -6,23 +6,15 @@ API Management components
 Azure API Management is made up of an API gateway, a management plane, and a developer portal. These components are Azure-hosted and fully managed by default. API Management is available in various tiers differing in capacity and features.
  ![alt text](https://learn.microsoft.com/en-us/azure/api-management/media/api-management-howto-oauth2/overview-graphic-azure-ad.png)
 
- 
-
-
-
-
-
-
-
 Protect API
-<validate-jwt header-name="Authorization" failed-validation-httpcode="401" failed-validation-error-message="Unauthorized. Access token is missing or invalid.">
+'<validate-jwt header-name="Authorization" failed-validation-httpcode="401" failed-validation-error-message="Unauthorized. Access token is missing or invalid.">
     <openid-config url="https://login.microsoftonline.com/{aad-tenant}/v2.0/.well-known/openid-configuration" />
     <required-claims>
         <claim name="aud">
             <value>{backend-app-client-id}</value>
         </claim>
     </required-claims>
-</validate-jwt>
+</validate-jwt>'
 Audience is the backend
  
 •	 <b>API gateway is the endpoint that:</b><br>
@@ -68,3 +60,8 @@ Protect API
 
 ![alt text](https://learn.microsoft.com/en-us/azure/api-management/media/set-edit-policies/form-editor.png)
 
+
+1. In Azure AD - create app registration for Frontend-app and create app registration for Backend-app 
+2. Register Backend app to Frontend-app using <b>API Permission </b>
+3. Using Developer portal tab, Open Auth Open ID, Security --> OAuth
+4. Check JWT token, Validate Inbound Policy..
