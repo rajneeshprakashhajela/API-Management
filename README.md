@@ -46,6 +46,7 @@ Put the above details into postman app and send the request.
 
 Protect API
 
+
 <validate-jwt header-name="Authorization" failed-validation-httpcode="401" failed-validation-error-message="Unauthorized. Access token is missing or invalid.">
     <openid-config url="https://login.microsoftonline.com/{aad-tenant}/v2.0/.well-known/openid-configuration" />
     <required-claims>
