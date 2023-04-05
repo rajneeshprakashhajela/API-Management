@@ -65,3 +65,13 @@ Protect API
 2. Register Backend app to Frontend-app using <b>API Permission </b>
 3. Using Developer portal tab, Open Auth Open ID, Security --> OAuth
 4. Check JWT token, Validate Inbound Policy..
+
+
+
+Created 2 accounts A and B
+Created a api that requires OCP key and validates JWT
+Created a product P for that API
+Subscribed A to P
+Got a JWT using B's credential
+B "stole" A's subscription Key
+B successfully consumed product P using his own JWT and A's subscription ke
