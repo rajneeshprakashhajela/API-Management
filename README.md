@@ -67,11 +67,11 @@ Protect API
 4. Check JWT token, Validate Inbound Policy..
 
 
-
-Created 2 accounts A and B
-Created a api that requires OCP key and validates JWT
-Created a product P for that API
-Subscribed A to P
-Got a JWT using B's credential
-B "stole" A's subscription Key
-B successfully consumed product P using his own JWT and A's subscription ke
+<b>Quick Steps </b>
+Created 2 accounts A and B <br/>
+Created a api that requires OCP key and validates JWT<br/>
+Created a product P for that API<br/>
+Subscribed A to P<br/>
+Got a JWT using B's credential<br/>
+B "stole" A's subscription Key<br/>
+B successfully consumed product P using his own JWT and A's subscription ke<br/>
