@@ -75,3 +75,27 @@ Subscribed A to P<br/>
 Got a JWT using B's credential<br/>
 B "stole" A's subscription Key<br/>
 B successfully consumed product P using his own JWT and A's subscription ke<br/>
+
+
+ADDING A VALIDATE-JWT POLICY TO AZURE API MANAGEMENT
+
+![image](https://user-images.githubusercontent.com/43515480/230013905-4268ccda-9187-4b3b-a338-1f1e7886e35a.png)
+
+Let’s create an Azure App Registration. You can use an existing App Registration, or create a new one. We will use an existing one – go to App Registrations and copy the Application (Client) Id:
+![image](https://user-images.githubusercontent.com/43515480/230014082-8758b82f-6d42-4626-ac7f-fe425f87133a.png)
+Before we make any changes, the All operations looks like below:
+![image](https://user-images.githubusercontent.com/43515480/230014201-97d7ad5d-72e8-4689-9f12-43b529d33690.png)
+
+Now let’s add the new policy. We add the validate-jwt token header name = Authorization, and the claim AUD application id (the guid from the Application copied above):
+![image](https://user-images.githubusercontent.com/43515480/230014385-0578827a-11ed-46b8-ab2f-357fa525f9f2.png)
+
+
+Let’s add an Authorization header. We will need to pass the authorization token, so let’s generate a Bearer token. For the resource, you can use Application Id of the app registration.
+
+Copy the generated bearer token and send it through in the headers with Authorization,  Bearer <token>:
+  ![image](https://user-images.githubusercontent.com/43515480/230014937-fe876692-c9ad-46ca-82a5-ec8ebc240c13.png)
+
+  
+  ![image](https://user-images.githubusercontent.com/43515480/230014983-ef9a5354-d1b7-4c32-864e-17b3c69530be.png)
+
+  
