@@ -102,3 +102,6 @@ Copy the generated bearer token and send it through in the headers with Authoriz
 Step by step
 
 https://techcommunity.microsoft.com/t5/azure-paas-blog/restricting-api-management-access-to-users-through-aad/ba-p/2116259
+
+
+<img width="436" alt="image" src="https://user-images.githubusercontent.com/43515480/231391894-53be063c-3245-4f15-871b-db4c20bcf179.png">
