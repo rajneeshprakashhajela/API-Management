@@ -144,3 +144,117 @@ https://www.codeusingjava.com/interview/apim
   
   
   
+Q: What is Azure APIM?
+Ans:
+Azure API Management is a fully managed solution that allows users to securely publish, adapt, manage, and monitor APIs. Users can construct an API facade in the Azure portal with a few clicks that serves as a "front door" through which external and internal apps can access data or business logic implemented by our custom-built backend services running on Azure.
+
+Q: What is API gateway?
+Ans:
+An API gateway is a solution for managing APIs that lies between a client and a group of backend services. An API gateway serves as a reverse proxy, accepting all API calls, aggregating the numerous services required to fulfil them, and returning the accurate outcome. It can also handle cross-cutting activities including authentication, SSL termination, and rate limitation.
+
+Q: Is APIM an API gateway?
+Ans:
+API Management (APIM) is a technique for creating consistent and modern API gateways for existing back-end services.
+
+Take a look at our suggested post :
+Azure Active Directory Interview Questions
+Azure Cosmos DB Interview Questions
+Azure Data Factory Interview Questions
+Azure Fabric Interview Questions
+Azure Functions Interview Questions
+Jenkins Interview Questions
+SonarQube Interview Questions
+Q: What's the difference between API management and API gateway?
+Ans:
+An API gateway is a simple proxy server, whereas API management is the whole solution for managing APIs in production, which comprises a cluster of API gateways, an administrative UI, and so on.
+
+Azure API Management Service is made of three main components.
+
+Azure portal
+Developer Portal -> URL -> https://<name>.developer.azure-api.net
+API Gateway -> URL -> https://<name>.azure-api.net
+API Management enables enterprises to publish APIs to external, vendor, and internal users in order to maximize the value of their data and services.
+Q: What is difference between proxy and gateway?
+Ans:
+A gateway is a network that serves as a point of entry into another network.
+A reverse proxy is a server that retrieves data sent from one or more other servers.
+The proxy server is effectively requesting permission from the gateway for data to access the network.
+Q: What is Gateway Routing?
+Ans:
+Using layer 7 routing and gateway as a reverse proxy to redirect requests to one or more backend services. The gateway serves as a single point of contact for clients and aids in the decoupling of clients from services.
+
+Q: What is Gateway Aggregation?
+Ans:
+We can utilize this gateway pattern, when to combine several requests into a single request. When a single activity needs calls to several backend services, this pattern fits. A single request is sent to the gateway by the client. The gateway forward request to various backend services, then aggregates and returns the results back to the client. This minimizes the level of communication between the client and the backend.
+
+Q: What is Gateway Offloading?
+Ans:
+Should use gateway to offload cross-cutting concerns and functionality from separate services to the gateway. Instead of making each service responsible for implementing these services, it may be more efficient to combine them into a single location. This is especially true for features like authentication and authorization, which require specialist skills to perform correctly.
+
+Q: Is Azure APIM a load balancer?
+Ans:
+API Management will not really handle load balancing, it can be used in combination with a load balancer like Application Gateway or a reverse proxy.
+
+Q: How to create Azure API Management service instance from the Azure portal?
+Ans:
+Select Create a resource from the Azure portal menu/Azure Home page.
+Select Integration > API Management from the Create a resource page.
+Select subscription, resource group, Instance details, and pricing tier on the Create API Management page, then click the Review+Create button.
+Search API Management services from the Azure Portal Home Page once it's been setup.
+Select the API Management service that you just built.
+Q: How to import a Postman collection into Azure API Management?
+Ans:
+Step1: Convert the Postman Collection to Swagger V2 JSON File
+There are various free tools that allow you to convert a Postman collection to any format you want, including Swagger in our instance. APIMATIC is one of these tools.
+APIMATIC API Transformer can be found at https://apimatic.io/transformer.
+Upload the file description for your Postman collection.
+Select the Target Description Format -> "Swagger v2.0 (JSON)" -> click "Convert Now".
+The output file will be downloaded to your computer automatically.
+Step2: Upload in the Azure APIM Portal
+In the Azure Portal, go to my API Management.
+Select "Add API" from the left pane, then "OpenAPI specification" from the drop-down menu.
+Click "Create" after importing the file prepared previously in the APIMATIC web tool.
+Q: How can I verify that every coming inbound request has a specific header in APIM?
+Ans:
+We can verify the every coming inbound request header by setting varaible in inbound policy inside an API in Azure API Management.
+
+Example:
+
+<policies>
+    <inbound>
+     <set-variable name="checkHeaderVal"
+                   value="@(context.Request.Headers.GetValueOrDefault("abc","").Contains("xxxxx") )" />
+    </inbound>
+</policies>
+Q: How to set the backend url from header in APIM?
+Ans:
+We can set the backend url in the policies.
+
+<policies>
+    <inbound>
+        <set-variable name="backendURL"
+                     value="@(context.Request.Headers.GetValueOrDefault("uri","https://techgeeknext.com/"))" />
+        <set-backend-service base-url="[parameters('backendURL')]"/>
+        <base />
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <base />
+    </outbound>
+    <on-error>
+        <base />
+    </on-error>
+</policies>
+Q: In the Azure APIM policy, how can we verify if the value supplied in the header is a Guid or not?
+Ans:
+<set-variable name="xguidId" value="@(context.Request.Headers.GetValueOrDefault("x-guid-id", Guid.NewGuid().ToString()))" />
+    <choose>
+        <!--If the variable x-guid-id is not specified, the request will be denied. -->
+        <when condition="@(Guid.TryParse(context.Variables.GetValueOrDefault<string>("xguidId"), out Guid newGuid) == false)">
+            <return-response>
+                <set-status code="400" reason="Please provide a correct guid." />
+            </return-response>
+        </when>
+    </choose>
