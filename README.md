@@ -105,3 +105,17 @@ https://techcommunity.microsoft.com/t5/azure-paas-blog/restricting-api-managemen
 
 
 <img width="436" alt="image" src="https://user-images.githubusercontent.com/43515480/231391894-53be063c-3245-4f15-871b-db4c20bcf179.png">
+
+  
+<H3>What is Azure API?</H3>
+<H3>What are API-Centric Applications?</H3>
+<H3>What is API Management?</H3>
+<H3>What are the features of APIM?</H3>
+<H3>What are the components used in APIM?</H3>
+<H3>What are Groups in APIM?</H3>
+<H3>How do we Create an instance in APIM?</H3>
+<H3>How can we manage my API Management instance programmatically?</H3>
+<H3>How can we use Azure API Management as a passthrough?</H3>
+<H3>How can we run SignalR hub through Azure API Management?</H3>
+<H3>How can we prevent direct access to API hosted in Azure app service?</H3>
+  
