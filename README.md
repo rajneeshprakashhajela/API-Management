@@ -1,6 +1,9 @@
                                           Azure API Management
 <h2>Azure API Management is a fully managed solution that allows users to securely publish, adapt, manage, and monitor APIs. Users can construct an API facade in the Azure portal with a few clicks that serves as a "front door" through which external and internal apps can access data or business logic implemented by our custom-built backend services running on Azure.</h2>
-                                          
+
+<h2>Common for resource creation (subscription, resource group, Instance details, and pricing tier)</h2>
+
+
 Azure API Management offers a scalable, multi-cloud API management platform for securing, publishing, and analyzing APIs.
 API Management components
  ![alt text](https://learn.microsoft.com/en-us/azure/api-management/media/api-management-key-concepts-experiment/api-management-components.png)
