@@ -119,3 +119,26 @@ https://techcommunity.microsoft.com/t5/azure-paas-blog/restricting-api-managemen
 <H3>How can we run SignalR hub through Azure API Management?</H3>
 <H3>How can we prevent direct access to API hosted in Azure app service?</H3>
   
+https://www.codeusingjava.com/interview/apim
+  
+  https://www.techgeeknext.com/azure/azure-apim-interview-questions
+  
+  
+  Azure APIM Interview Questions and Answers
+<H3>What is Azure APIM?</H3>
+<H3>What is API gateway management?</H3>
+<H3>Is APIM an API gateway?</H3>
+<H3>What's the difference between API management and API gateway?</H3>
+<H3>What is difference between proxy and gateway?</H3>
+<H3>What is Gateway Routing?</H3>
+<H3>What is Gateway Aggregation?</H3>
+<H3>What is Gateway Offloading?</H3>
+<H3>Is Azure APIM a load balancer?</H3>
+<H3>How to create Azure API Management service instance from the Azure portal?</H3>
+<H3>How to import a Postman collection into Azure API Management?</H3>
+<H3>How can we redirect the URL to specific backend url depending upon the value of inbound request header in APIM?</H3>
+<H3>In the Azure APIM policy, how can we verify if the value supplied in the header is a Guid or not?</H3>
+
+  
+  
+  
