@@ -1,4 +1,11 @@
-                                          Azure API Management
+
+<h1>Azure API Management </h1>
+<h3> Policies, Operation, Developer Portal, User Portal, Management Portal(API) </h3>
+
+Group : Administrator(complete operation CRUD), Developer, Group <br/>
+Policies: sequence order when request is receiving..<br/>
+
+
 <h2>Azure API Management is a fully managed solution that allows users to securely publish, adapt, manage, and monitor APIs. Users can construct an API facade in the Azure portal with a few clicks that serves as a "front door" through which external and internal apps can access data or business logic implemented by our custom-built backend services running on Azure.</h2>
 
 <h2>Common for resource creation (subscription, resource group, Instance details, and pricing tier)</h2>
