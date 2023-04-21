@@ -10,6 +10,9 @@ Policies: sequence order when request is receiving..<br/>
 
 <h2>Common for resource creation (subscription, resource group, Instance details, and pricing tier)</h2>
 
+Developer Portal
+![image](https://user-images.githubusercontent.com/43515480/233549605-7e0db579-8a4e-4061-8732-9caa7d4abb6a.png)
+
 
 Azure API Management offers a scalable, multi-cloud API management platform for securing, publishing, and analyzing APIs.
 API Management components
@@ -24,7 +27,7 @@ Protect API
     <required-claims>
         <claim name="aud">
             <value>{backend-app-client-id}</value>
-        </claim>
+        </claim>/
     </required-claims>
 </validate-jwt>"'
 Audience is the backend
@@ -268,3 +271,10 @@ Ans:
             </return-response>
         </when>
     </choose>
+
+ ![image](https://user-images.githubusercontent.com/43515480/233553412-bf6734c4-dcca-41cc-9889-2cb7b7a66c33.png)
+
+ ![image](https://user-images.githubusercontent.com/43515480/233553484-eb897e3c-0e6b-4b85-bee6-c24d1d621e3c.png)
+![image](https://user-images.githubusercontent.com/43515480/233554133-17cb7282-8273-4d23-a1a0-807bf1041cf4.png)
+
+ ![image](https://user-images.githubusercontent.com/43515480/233554169-a08998e0-289c-4d0e-8e6b-3f31887004df.png)
