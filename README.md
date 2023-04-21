@@ -281,3 +281,5 @@ Ans:
  
  ![image](https://user-images.githubusercontent.com/43515480/233555505-6d139cba-057a-4057-8fc0-161589ad18db.png)
 
+Base64 Encode.org <br/>
+ ![image](https://user-images.githubusercontent.com/43515480/233555692-afefac68-dd8f-413a-af3c-f129484a602b.png)
