@@ -4,6 +4,7 @@
 
 Group : Administrator(complete operation CRUD), Developer, Group <br/>
 Policies: sequence order when request is receiving..<br/>
+![image](https://user-images.githubusercontent.com/43515480/233818328-574c6e28-7781-46ab-af37-8048a06e7eec.png)
 
 
 <h2>Azure API Management is a fully managed solution that allows users to securely publish, adapt, manage, and monitor APIs. Users can construct an API facade in the Azure portal with a few clicks that serves as a "front door" through which external and internal apps can access data or business logic implemented by our custom-built backend services running on Azure.</h2>
